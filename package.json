@@ -3,14 +3,17 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
+    "web": "expo start --web-only",
+    "start:macos": "node node_modules/react-native-macos/local-cli/cli.js start --use-react-native-macos",
+    "start:electron": "yarn expo-electron start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "start:macos": "node node_modules/react-native-macos/local-cli/cli.js start --use-react-native-macos"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "electron": "^6.0.12",
     "expo": "^38.0.8",
     "react": "16.9.0",
     "react-dom": "^16.13.1",
@@ -21,6 +24,8 @@
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
+    "@expo/electron-adapter": "^0.0.7",
+    "@expo/webpack-config": "^0.12.20",
     "@react-native-community/eslint-config": "^0.0.7",
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.61.15",
