@@ -1,4 +1,7 @@
 {
   "name": "rnDesktopExample",
-  "displayName": "rnDesktopExample"
+  "displayName": "rnDesktopExample",
+  "expo": {
+    "platforms": ["web"]
+  }
 }
